@@ -13,6 +13,7 @@
             <header class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-200 pb-6 dark:border-gray-800">
                 <a href="{{ route('posts.index') }}" class="text-xl font-semibold">게시판</a>
                 <nav aria-label="주 메뉴" class="flex flex-wrap items-center gap-4 text-sm">
+                    <a href="{{ route('users.index') }}" class="underline underline-offset-4">사용자 목록</a>
                     <a href="{{ route('posts.create') }}" class="underline underline-offset-4">글쓰기</a>
                     @auth
                         <span>{{ auth()->user()->name }}</span>
